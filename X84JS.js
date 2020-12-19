@@ -99,19 +99,43 @@ function keydown1(e) {
         }
     }
     if (keyPressed == "87") {
-        //right
+        //up
         if (rover_y >= 0) {
 
+            rover_y2 = rover_y2 - 10;
+            console.log("When up arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+            uploadBackground();
+            uploadRover();
 
         }
     }
 
     if (keyPressed == "83") {
-        //right
+        //down
         if (rover_y <= 500) {
+            rover_y2 = rover_y2 - 10;
+            console.log("When up arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+            uploadBackground();
+            uploadRover();
+        }
+    }
 
-
-
+    if (keyPressed == "65") {
+        //right
+        if (rover_x <= 700) {
+            rover_x = rover_x + 10;
+            console.log("When up arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+            uploadBackground();
+            uploadRover();
+        }
+    }
+    if (keyPressed == "65") {
+        //right
+        if (rover_x >= 0) {
+            rover_x = rover_x - 10;
+            console.log("When up arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+            uploadBackground();
+            uploadRover();
         }
     }
 }
