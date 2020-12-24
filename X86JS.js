@@ -31,25 +31,11 @@ function add() {
 
 }
 
-function add2() {
-    image2_imgTag = new Image();
-    image2_imgTag.onload = uploadRover2;
-    background_imgTag.src = background_image;
-
-    image2_imgTag.src = image2;
-}
-
-function uploadBackground() {
-    ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
-}
 
 function uploadRover() {
     ctx.drawImage(rover_imgTag, rover_x, rover_y, rover_width, rover_height);
 }
 
-function uploadRover2() {
-    ctx.drawImage(image2Tag, rover_x, rover_y2, rover_width, rover_height);
-}
 
 addEventListener("keydown", keydown1);
 
