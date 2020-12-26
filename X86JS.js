@@ -104,11 +104,49 @@ function keydown1(e) {
 
 
     if (keyPressed = "83") {
-        newImage("https://lh6.googleusercontent.com/Gm4ExrJQ0HMD4DJ35On6ptiqT_nV4MNQZvMe8LwsRjO1dBLtsV3KLYD4a8Ef_ksLFocNWJLgMHrySdbk8taM=w1280-h665") uploadRover();
+        newImage("https://lh6.googleusercontent.com/Gm4ExrJQ0HMD4DJ35On6ptiqT_nV4MNQZvMe8LwsRjO1dBLtsV3KLYD4a8Ef_ksLFocNWJLgMHrySdbk8taM=w1280-h665");
+        uploadRover();
 
     }
 
     if (keyPressed = "72") {
         newImage("https://lh5.googleusercontent.com/VkpN1K9H700oOKEipeewRYkzqa0awRLHRPsqFKuSBQxp024DlFGKuR7-G5Q4OVsIxJNAp3Zf2VKcT5WtLiFE=w1280-h665")
+    }
+}
+if (keyPressed == "38") {
+    //up
+    if (rover_y >= 0) {
+        rover_y = rover_y - 10;
+        console.log("When up arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+
+        uploadRover();
+    }
+
+}
+if (keyPressed == "40") {
+    //down
+    if (rover_y <= 500) {
+        rover_y = rover_y + 10;
+
+        uploadRover();
+    }
+}
+
+if (keyPressed == "37") {
+    //left
+    if (rover_x >= 0) {
+        rover_x = rover_x - 10;
+
+
+        uploadRover();
+    }
+}
+
+if (keyPressed == "39") {
+    //right
+    if (rover_x <= 700) {
+        rover_x = rover_x + 10;
+        uploadRover();
+
     }
 }
