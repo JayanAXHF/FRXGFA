@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>X89B</title>
+    <style>
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(4, 2, 55, 1) 0%, rgba(3, 1, 41, 1) 0%, rgba(5, 4, 70, 1) 11%,
+                    rgba(8, 7, 107, 1) 20%, rgba(9, 9, 121, 1) 26%, rgba(8, 28, 133, 1) 37%, rgba(6, 79, 166, 1) 50%, rgba(6, 87, 172, 1) 60%,
+                    rgba(5, 103, 183, 1) 64%, rgba(4, 122, 196, 1) 70%, rgba(3, 141, 209, 1) 76%, rgba(2, 170, 228, 1) 85%, rgba(1, 196, 245, 1) 92%,
+                    rgba(0, 212, 255, 1) 100%);
+            color: #ffffff;
+
+
+        }
+
+
+
+        .login_div1,
+        .login_div2 {
+            background: rgb(255, 255, 255);
+            padding: 10px;
+            float: none;
+            border-radius: 15px;
+        }
+
+
+        #player1_name,
+        #player2_name {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        #word {
+            width: 60%;
+        }
+
+        #word_display {
+            letter-spacing: 5px;
+        }
+
+        #output {
+            background: white;
+            border-radius: 10px;
+            border-top: 10px solid #000000;
+            padding: 10px;
+            float: none;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="">Send your Equation </label> &nbsp; <label for="">Tip: Give a Equation of 5 numbers or more</label>
+        <br><br>
+        <input type="text" id="n1" class="form-control">
+        <br><br>
+        <input type="text" id="n2" class="form-control">
+
+        <button onclick="f2()" class="btn btn-success" style="width: 30%;">Send</button>
+
+    </center>
+
+    <script src="X89JS.js"></script>
+
+</body>
+
+</html>
