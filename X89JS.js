@@ -1,3 +1,5 @@
+// JavaScript For Project no. 89 // 
+
 function addUser() {
     localStorage.setItem("p1n", document.getElementById("player1_name_input").value);
     localStorage.setItem("p2n", document.getElementById("player2_name_input").value)
@@ -33,7 +35,7 @@ function send() {
 
     word = gw + "×" + ge;
 
-
+    let a = parseInt(gw) * parseInt(ge);
     let number1 = document.getElementById("n1").value;
     console.log("F ~ file: X89.js ~ line 38 ~ send ~ check_button", number1);
     let number2 = document.getElementById("n2").value;
